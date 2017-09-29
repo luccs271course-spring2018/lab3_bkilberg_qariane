@@ -77,9 +77,12 @@ public class TestIterator {
         i.remove(); // TODO what happens if you use list.remove(77)?
       }
     }
-    // TODO using assertEquals and Arrays.asList, express which values are left in the list
+    // TODO WORKING using assertEquals and Arrays.asList, express which values are left in the list
     // See TestList.java for examples of how to use Arrays.asList; also see the Java Arrays
     // class for more information
+    assertEquals(3, list.size());
+    assertEquals(Arrays.asList(77, 77, 77), list); 
+    assertEquals(Arrays.asList(33, 44, 55,66), list);
     fail("Not yet implemented"); // remove this line when done
   }
 
